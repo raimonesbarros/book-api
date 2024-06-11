@@ -13,11 +13,4 @@ public class BooksApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BooksApiApplication.class, args);
 	}
-	@Bean
-	public OpenAPI bookOpenAPI() {
-		return new OpenAPI()
-				.info(new Info().title("Book API")
-						.description("Spring books sample application")
-						.version("v0.0.1"));
-	}
 }
