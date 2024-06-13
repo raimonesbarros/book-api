@@ -2,11 +2,11 @@ version: '3.8'
 services:
   postgres:
     image: postgres:13
-    container_name: kondayDB
+    container_name: bookDB
     environment:
-      POSTGRES_USER: konday
-      POSTGRES_PASSWORD: konday
-      POSTGRES_DB: kondaydb
+      POSTGRES_USER: book
+      POSTGRES_PASSWORD: book
+      POSTGRES_DB: bookdb
     ports:
       - "5432:5432"
     volumes:
